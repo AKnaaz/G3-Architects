@@ -101,6 +101,41 @@ main > section{
     margin-bottom: 30px;
 }
 
+/* features style */
+#feature-sec-title{
+    border-left: 5px solid rgb(255, 144, 14) ;
+    padding-left: 21px;
+}
+.features{
+    gap: 100px;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.feature-card .feature-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#exp-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#exp-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.feature-img img{
+    width: 100%;
+}
+
 /* facts style */
 .fact-container{
     display: grid;
@@ -145,13 +180,20 @@ main > section{
     filter: grayscale(100%);
 }
 
+/* footer style */
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 130px 0px;
+}
 
 /* responsive media query */
 /* small device */
 @media screen and (max-width: 576px) {
     .navbar,
     .nav-links,
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .nav-item{
@@ -173,11 +215,16 @@ main > section{
         justify-items: center;
         gap: 50px;
     }
+    #exp-badge{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
 }
 
 /* medium device */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .our-features{
@@ -188,5 +235,9 @@ main > section{
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
+    }
+    #exp-badge{
+        margin-left: 20px;
+        margin-top: 20px;
     }
 }
